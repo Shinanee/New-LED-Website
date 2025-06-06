@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="About.css">
+  <title>About</title>
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="container">
+      <div class="left-section">
+        <img src="company logo.png" alt="Company Logo" class="logo" />
+        <div class="social-icons">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="download-removebg-preview.png" alt="WhatsApp" />
+          </a>
+          <a href="https://www.linkedin.com/company/rak-led-displays/" target="_blank">
+            <img src="linkedin (1).jpg" alt="LinkedIn" />
+          </a>
+           <a href="https://www.instagram.com/rak_led_displays/" target="_blank">
+            <img src="Instagram_icon.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="13051733.png" alt="Facebook" />
+          </a>
+          <a href="https://www.youtube.com/@RAKLEDsolutions" target="_blank">
+            <img src="youtube-small-icon-9-removebg-preview.png" alt="youtube" />
+            
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <div class="dropdown">
+          <a href="Products.html" class="dropbtn">Products</a>
+          <ul class="dropdown-content">
+             <li><a href="Leddsisplayscreen.html">LED Display Screen</a></li>
+                  <li><a href="Facadelightsolution.html">Facade Light Solution</a></li>
+                  <li><a href="Digitalstandee.html">Digital Standee</a></li>
+                  <li><a href="Transparentledscreen.html">Transparent LED Screen</a></li>
+                  <li><a href="Interactivefloor.html">Interactive Floor</a></li>
+                  <li><a href="Flexibleleddisplayscreen.html">Flexible LED Display Screen</a></li>
+                  <li><a href="Rentalleddisplay.html">Rental LED Display</a></li>
+                 <li><a href="Floorledscreen.html">Floor LED Screen</a></li>
+                  <li><a href="Customizedleddisplayscreen.html">Customized LED Display Screen</a></li>
+          </ul>
+        </div>
+        <a href="Services.html">Services</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('nav');
+
+      menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+  <div class="hero-banner">
+    <div class="slides">
+      <div class="slide slide1"></div>
+      <div class="slide slide2"></div>
+      <div class="slide slide3"></div>
+    </div>
+    <div class="overlay">
+      <h1>About Us</h1>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <!-- Left Side: Image -->
+    <div class="image-container">
+      <img src="about-im-e1727942217708 (2).webp" alt="LED Display Image">
+    </div>
+
+    <!-- Right Side: Content -->
+    <div class="content">
+      <h2>The Only LED Display Company in India with Multiverse Expertise</h2>
+
+      <h3>Who Are  We </h3>
+      <p>
+        We are a leading provider of innovative LED display solutions, dedicated to helping businesses and organizations communicate their message effectively and efficiently. With years of experience in the industry, we have established ourselves as a trusted partner for companies looking to elevate their digital signage and advertising game.
+      </p>
+
+      <h3>Our Mission</h3>
+      <p>
+        To empower businesses with advanced LED technology that enhances visibility, drives engagement, and delivers measurable impact—across every platform and environment.
+      </p>
+
+      <h3>Our Vision</h3>
+      <p>
+        To be the benchmark of excellence in the LED display industry, setting new standards in creativity, quality, and customer satisfaction while pioneering multiverse-enabled visual experiences.
+      </p>
+    </div>
+  </div>
+
+
+
+  <section class="stats-section">
+    <div class="stats-marquee">
+      <div class="stats-container">
+        <div class="stat-box">
+          <h2><span class="counter" data-target="8">0</span>+</h2>
+          <p>Years of Experience</p>
+        </div>
+        <div class="stat-box">
+          <h2><span class="counter" data-target="1000">0</span>+</h2>
+          <p>Completed Projects</p>
+        </div>
+        <div class="stat-box">
+          <h2><span class="counter" data-target="4">0</span>+</h2>
+          <p>Countries</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 50;
+  
+        const increment = target / speed;
+  
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+  
+      const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+          updateCount();
+          observer.unobserve(counter);
+        }
+      }, { threshold: 1 });
+  
+      observer.observe(counter);
+    });
+  </script>
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About Section -->
+    <div class="footer-column">
+      <h3>About RAK LED Solutions</h3>
+      <p>
+        RAK LED Solutions is a rapidly growing company <br>
+        in the LED Advertising and Display markets. <br>
+        In addition to exclusive consultancy, <br>
+        customization, and sales, we are the only <br>
+        company offering after-sales service for <br>
+        multiple brands through a team of specially <br>
+       trained engineers — even for existing users.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Products -->
+    <div class="footer-column">
+      <h3>Products</h3>
+      <ul>
+        <li><a href="#">Indoor LED Screen</a></li>
+        <li><a href="#">Outdoor LED Screen</a></li>
+        <li><a href="#">Digital Standy</a></li>
+        <li><a href="#">Transparent LED Screen</a></li>
+        <li><a href="#">Rental Series LED Screen</a></li>
+        <li><a href="#">Facade Lighting</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-column">
+      <h3>Location & Contact</h3>
+      <p>Ground Floor, FA-332A, Block E,<br>Mansarover Garden, New Delhi, Delhi - 110015</p>
+      <p>📞 <a href="tel:+917683059081">+91 768-305-9081</a></p>
+      <p>✉️ <a href="mailto:sales.rakled@gmail.com">sales.rakled@gmail.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; RAK LED Solutions — All Rights Reserved</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
