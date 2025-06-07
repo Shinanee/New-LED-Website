@@ -1,0 +1,371 @@
+
+
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .header {
+      background-color: rgba(17, 17, 17, 0.78);
+      border-bottom: 1px solid #333;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      max-width: 1800px;
+      margin: auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .left-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #ccc;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: #facc15;
+    }
+
+    .nav .btn {
+      background-color: #facc15;
+      color: #111;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 200px;
+      z-index: 1;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      top: 100%;
+      left: 0;
+    }
+
+    .dropdown-content li {
+      width: 100%;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 16px;
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #444;
+      color: #facc15;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      color: #facc15;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #111;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+      }
+
+      .nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .dropdown-content {
+        position: static;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: none;
+      }
+
+      .dropdown .dropbtn::after {
+        content: ' ▼';
+      }
+
+      .dropdown .dropbtn:focus + .dropdown-content,
+      .dropdown .dropbtn:active + .dropdown-content {
+        display: block;
+      }
+    }
+
+
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* 🔷 Banner */
+  .banner {
+    background-image: url('Indoor Fixed Display hall (2).jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    color: white;
+  }
+  .banner .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+  .banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* 🔶 Product Section */
+  .product-section {
+    padding: 40px 20px;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Product Card */
+  .product-card {
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  .img-box {
+    position: relative;
+  }
+  .img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .product-card:hover img {
+    transform: scale(1.05);
+  }
+  .hover-overlay {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,123,255,0.4), rgba(0,0,0,0.5));
+    transition: top 0.4s ease-in-out;
+  }
+  .product-card:hover .hover-overlay {
+    top: 0;
+  }
+  .product-card h3 {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer {
+    background-color: #03275a;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .footer-column {
+    flex: 1 1 220px;
+    min-width: 200px;
+  }
+
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f0c040;
+  }
+
+  .footer-column p,
+  .footer-column ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+
+  .footer-column ul li a:hover {
+    color: #f0c040;
+  }
+
+  .footer-column a {
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  .footer-column a:hover {
+    color: #f0c040;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #999;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+
+ 
+
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+  }
+  .delay-1 { animation-delay: 0.2s; }
+  .delay-2 { animation-delay: 0.4s; }
+  .delay-3 { animation-delay: 0.6s; }
+  .delay-4 { animation-delay: 0.8s; }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
