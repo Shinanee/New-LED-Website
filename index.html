@@ -95,7 +95,22 @@
 </header>
  
 
+<button id="toggleVideo">Pause Video</button>
 
+<script>
+  const video = document.querySelector('.bg-video');
+  const button = document.getElementById('toggleVideo');
+
+  button.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      button.textContent = 'Pause Video';
+    } else {
+      video.pause();
+      button.textContent = 'Play Video';
+    }
+  });
+</script>
 
   <section class="why-choose">
 
