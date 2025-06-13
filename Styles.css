@@ -162,6 +162,7 @@
       }
     }
 
+      
 .video-banner {
   position: relative;
   height: 100vh;
@@ -201,75 +202,87 @@
   font-size: 1.2rem;
 }
 
- 
-  .why-choose {
-    font-family: 'Segoe UI', sans-serif;
-   
+
+
+
+
+
+
+
+.why-choose {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 20px;
+  background-color: #121212;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00d8ff;
+  margin-bottom: 40px;
+}
+
+.feature-block {
+  position: relative;
+  color: #fff;
+  padding: 60px 20px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.overlay img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.feature-block h2 {
+  font-size: 1.8rem;
+  color: #00d8ff;
+  margin-bottom: 20px;
+}
+
+.feature-block p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
   }
- 
-  .feature-block {
-    position: relative;
-    color: #fff;
-    padding: 80px 20px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    text-align: center;
-  }
-  
-  .overlay {
-    background-color: rgba(79, 65, 65, 0.855);
-    max-width: 1000px;
-    margin: auto;
-   
-    border-radius: 12px;
-  }
-  
+
   .feature-block h2 {
-    font-size: 1.8rem;
-    color: #00d8ff;
-    margin-bottom: 20px;
+    font-size: 1.4rem;
   }
-  
+
   .feature-block p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #e0e0e0;
-  }
-  
-
-  /* Backgrounds - Replace with your actual images */
-  .bg-extensive {
-    background-image: url('ChatGPT Image May 9, 2025, 12_00_13 PM.png');
-  }
-  
-  .bg-trusted {
-    background-image: url('ChatGPT Image May 9, 2025, 12_00_13 PM.png');
-  }
-  
-  .bg-support {
-    background-image: url('ChatGPT Image May 9, 2025, 12_00_13 PM.png');
-  }
-  
-  .bg-drawings {
-    background-image: url('ChatGPT Image May 9, 2025, 12_00_13 PM.png');
-  }
-  
-  /* Mobile Friendly */
-  @media (max-width: 768px) {
-    .feature-block {
-      padding: 60px 15px;
-    }
-  
-    .feature-block h2 {
-      font-size: 1.5rem;
-    }
-  
-    .feature-block p {
-      font-size: 1rem;
-    }
+    font-size: 1rem;
   }
 
+  .overlay {
+    padding: 20px;
+  }
+}
+
+/* Optional Backgrounds */
+.bg-extensive, .bg-trusted, .bg-support, .bg-drawings {
+  background-image: url('ChatGPT Image May 9, 2025, 12_00_13 PM.png');
+}
 
 
   .led-marquee {
