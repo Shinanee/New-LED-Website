@@ -374,6 +374,52 @@
 
 
 
+  .product-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 100px;
+    max-width: 600px;
+    color: #ffffff; 
+
+  }
+  
+  .image {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .image img {
+    max-width: 60%;
+   
+    height: auto;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .image img:hover {
+    transform: scale(1.05);
+  }
+
+
+
+
+
+
+
+  
+
+
 
   .footer {
     background-color: #03275a;
