@@ -81,8 +81,105 @@
 
 
 
+  <!-- 3D Banner -->
+  <div class="banner">
+    <h1>Kinetic LED Screens</h1>
+    <p>Experience 3D Motion-Driven LED Technology</p>
+  </div>
 
+  <!-- 3D Tilt Cards -->
+  <div class="cards-container">
+    <div class="card">
+      <img src="Kinetic-LED-Gallery-04-Public-Exhibition-Space.jpg"Motion LED" />
+      <h3>Motion-Integrated Display –</h3>
+      <p> LED modules move independently or in groups.</p>
+    </div>
 
+    <div class="card">
+      <img src="moving-led-wall.jpg" alt="Smart LED" />
+      <h3>Customizable Animations –</h3>
+      <p> Program specific motion sequences with software.</p>
+    </div>
+
+    <div class="card">
+      <img src="079a38a6-79f5-4558-9de2-421a38fb086a.jpg" alt="3D Grid" />
+      <h3>Synchronized Visuals –</h3>
+      <p> Movement can align with music, video, or live events.</p>
+    </div>
+    <div class="card">
+      <img src="kinetic-led-display-for-event-rental-exhibition.webp" alt="Motion LED"  />
+      <h3>3D Visual Illusion –</h3>
+      <p> Depth and volume effects through kinetic transformation.</p>
+    </div>
+    <div class="card">
+      <img src="Kinetic-LED-screen-1.webp" alt="Motion LED"  />
+      <h3>Modular Design – </h3>
+      <p>Flexible configuration (grids, walls, hanging patterns).
+
+</p>
+    </div>
+    <div class="card">
+      <img src="IMG_20250325_142851 (1).jpg"alt="Motion LED"  />
+      <h3>High Brightness & Clarity –</h3>
+      <p> Crisp visuals even in large venues.</p>
+    </div>
+     <div class="card">
+      <img src="20221229_014543 (1).jpg"alt="Motion LED" />
+      <h3>Interactive Possibilities – </h3>
+      <p> Integration with sensors for audience engagement.</p>
+    </div>
+     <div class="card">
+      <img src="kinetic-led-screen-display (1).webp"alt="Motion LED"  />
+      <h3>DConcerts & Stage Shows – </h3>
+      <p>Dramatic visual effects and stage backdrops.</p>
+    </div>
+    <div class="card">
+      <img src="20230211_002451-1536x865.jpg" alt="3D Grid" />
+      <h3>Product Launches & Expos –</h3>
+      <p> Eye-catching motion displays.</p>
+    </div>
+     <div class="card">
+      <img src="20230210_230707-1536x865.jpg" alt="3D Grid" />
+      <h3>Museums & Art Installations – </h3>
+      <p>Immersive kinetic experiences.</p>
+    </div>
+     <div class="card">
+      <img src="IMG_20250305_181312.webp" alt="3D Grid" />
+      <h3>Luxury Retail – </h3>
+      <p>Dynamic shopfronts that captivate passersby.</p>
+    </div>
+     <div class="card">
+      <img src="IMG_20250305_181431.webp"Motion LED" />
+      <h3>Event Branding – </h3>
+      <p>Unforgettable motion-based logo reveals and storytelling.</p>
+    </div>
+  </div>
+
+  <!-- 3D Tilt Effect -->
+  <script>
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = -(y - centerY) / 15;
+        const rotateY = (x - centerX) / 15;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+      });
+    });
+  </script>
+
+  </script>
 
 
 
