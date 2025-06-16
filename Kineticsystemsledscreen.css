@@ -9,7 +9,7 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
+      background-color: #c9c5c5;
       color: #fff;
     }
 
@@ -167,14 +167,97 @@
 
 
 
+    /* 3D Banner */
+    .banner {
+      height: 70vh;
+      background: url('Kinetic-LED-Gallery-04-Public-Exhibition-Space.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      perspective: 1000px;
+    }
 
+    .banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(4, 4, 4, 0);
+    }
 
+    .banner h1,
+    .banner p {
+      z-index: 1;
+    }
 
+    .banner h1 {
+      font-size: 3em;
+      color: hsl(180, 5%, 93%);
+                                      
+      transform: rotateX(10deg);
+    }
 
+    .banner p {
+      font-size: 1.2em;
+      color: #cceeff;
+      margin-top: 10px;
+    }
 
+    /* Card Section */
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 30px;
+      perspective: 1000px;
+    }
 
+    .card {
+      width: 300px;
+      height: 400px;
+      background: rgba(10, 7, 7, 0.829);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      transform-style: preserve-3d;
+      transition: transform 0.4s ease;
+      cursor: pointer;
+    }
 
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
 
+    .card h3 {
+      font-size: 1.4em;
+      color: #00ffd5;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #ddeeff;
+    }
+
+    @media (max-width: 768px) {
+      .banner h1 {
+        font-size: 2em;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+
+ 
 
 
 
