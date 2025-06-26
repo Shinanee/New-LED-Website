@@ -1,0 +1,230 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="Mesh.css">
+    
+    <title>Products</title>
+</head>
+<body>
+    
+     <header class="header">
+    <div class="container">
+      <div class="left-section">
+        <img src="company logo.png" alt="Company Logo" class="logo" />
+        <div class="social-icons">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="download-removebg-preview.png" alt="WhatsApp" />
+          </a>
+          <a href="https://www.linkedin.com/company/rak-led-displays/" target="_blank">
+            <img src="linkedin (1).jpg" alt="LinkedIn" />
+          </a>
+           <a href="https://www.instagram.com/rak_led_displays/" target="_blank">
+            <img src="Instagram_icon.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="13051733.png" alt="Facebook" />
+          </a>
+          <a href="https://www.youtube.com/@RAKLEDsolutions" target="_blank">
+            <img src="youtube-small-icon-9-removebg-preview.png" alt="youtube" />
+            
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <div class="dropdown">
+          <a href="Products.html" class="dropbtn">Products</a>
+          <ul class="dropdown-content">
+             <li><a href="Leddsisplayscreen.html">LED Display Screen</a></li>
+                  <li><a href="Facadelightsolution.html">Facade Light Solution</a></li>
+                  <li><a href="Digitalstandee.html">Digital Standee</a></li>
+                  <li><a href="Transparentledscreen.html">Transparent LED Screen</a></li>
+                  <li><a href="Interactivefloor.html">Interactive Floor</a></li>
+                  <li><a href="Flexibleleddisplayscreen.html">Flexible LED Display Screen</a></li>
+                  <li><a href="Rentalleddisplay.html">Rental LED Display</a></li>
+                 <li><a href="Floorledscreen.html">Floor LED Screen</a></li>
+                  <li><a href="Customizedleddisplayscreen.html">Customized LED Display Screen</a></li>
+          </ul>
+        </div>
+        <a href="Services.html">Services</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('nav');
+
+      menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+
+
+
+
+
+
+  <!-- 3D Banner -->
+  <div class="banner">
+    <h1>Mesh Types LED Screens</h1>
+    <p>Experience 3D Motion-Driven LED Technology</p>
+  </div>
+
+  <!-- 3D Tilt Cards -->
+  <div class="cards-container">
+    <div class="card">
+      <img src=" mesh-led-screen.jpg"Motion LED" />
+      <h3>Motion-Integrated Display –</h3>
+      <p> LED modules move independently or in groups.</p>
+    </div>
+
+    <div class="card">
+      <img src="LED-Facade-Mesh-Screen.webp" alt="Smart LED" />
+      <h3>Customizable Animations –</h3>
+      <p> Program specific motion sequences with software.</p>
+    </div>
+
+    <div class="card">
+      <img src="images (4).jpg" alt="3D Grid" />
+      <h3>Synchronized Visuals –</h3>
+      <p> Movement can align with music, video, or live events.</p>
+    </div>
+    <div class="card">
+      <img src="20240228_140642-scaled.webp.bv_resized_desktop.webp.bv.webp" alt="Motion LED"  />
+      <h3>3D Visual Illusion –</h3>
+      <p> Depth and volume effects through kinetic transformation.</p>
+    </div>
+    <div class="card">
+      <img src="20240301_102836-scaled.jpg.bv_resized_desktop.jpg.bv.webp" alt="Motion LED"  />
+      <h3>Modular Design – </h3>
+      <p>Flexible configuration (grids, walls, hanging patterns).
+
+</p>
+    </div>
+    <div class="card">
+      <img src="20240301_102953-scaled.jpg.bv_resized_desktop.jpg.bv.webp"alt="Motion LED"  />
+      <h3>High Brightness & Clarity –</h3>
+      <p> Crisp visuals even in large venues.</p>
+    </div>
+     <div class="card">
+      <img src="664314e229aad.webp"alt="Motion LED" />
+      <h3>Interactive Possibilities – </h3>
+      <p> Integration with sensors for audience engagement.</p>
+    </div>
+
+    <div class="card">
+      <img src="pl157319534-led_screen_display_full_color_led_mesh_screen_flexible_led_curtain_display.webp" alt="3D Grid" />
+      <h3>Product Launches & Expos –</h3>
+      <p> Eye-catching motion displays.</p>
+    </div>
+     
+     
+   
+  </div>
+
+  <!-- 3D Tilt Effect -->
+  <script>
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = -(y - centerY) / 15;
+        const rotateY = (x - centerX) / 15;
+
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+      });
+    });
+  </script>
+
+  </script>
+
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- About Section -->
+          <div class="footer-column">
+            <h3>About RAK LED Solutions</h3>
+            <p>
+              RAK LED Solutions is a rapidly growing company <br>
+              in the LED Advertising and Display markets. <br>
+              In addition to exclusive consultancy, <br>
+              customization, and sales, we are the only <br>
+              company offering after-sales service for <br>
+              multiple brands through a team of specially <br>
+             trained engineers — even for existing users.
+            </p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Products.html">Products</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Products -->
+          <div class="footer-column">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#">Indoor LED Screen</a></li>
+              <li><a href="#">Outdoor LED Screen</a></li>
+              <li><a href="#">Digital Standy</a></li>
+              <li><a href="#">Transparent LED Screen</a></li>
+              <li><a href="#">Rental Series LED Screen</a></li>
+              <li><a href="#">Facade Lighting</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="footer-column">
+            <h3>Location & Contact</h3>
+            <p>Ground Floor, FA-332A, Block E,<br>Mansarover Garden, New Delhi, Delhi - 110015</p>
+            <p>📞 <a href="tel:+917683059081">+91 768-305-9081</a></p>
+            <p>✉️ <a href="mailto:sales.rakled@gmail.com">sales.rakled@gmail.com</a></p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; RAK LED Solutions — All Rights Reserved</p>
+        </div>
+      </footer>
+      
+      
+      </body>
+      </html>
