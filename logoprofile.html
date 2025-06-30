@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="logoprofile.css">
+    
+    <title>Products</title>
+</head>
+<body>
+    
+      <header class="header">
+    <div class="container">
+      <div class="left-section">
+     
+        <a href="logoprofile.html">
+        <img src="company logo.png" alt="Company Logo" class="logo" />
+        </a>
+        <div class="social-icons">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="download-removebg-preview.png" alt="WhatsApp" />
+          </a>
+          <a href="https://www.linkedin.com/company/rak-led-displays/" target="_blank">
+            <img src="linkedin (1).jpg" alt="LinkedIn" />
+          </a>
+           <a href="https://www.instagram.com/rak_led_displays/" target="_blank">
+            <img src="Instagram_icon.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="13051733.png" alt="Facebook" />
+          </a>
+          <a href="https://www.youtube.com/@RAKLEDsolutions" target="_blank">
+            <img src="youtube-small-icon-9-removebg-preview.png" alt="youtube" />
+          </a>
+         <a href="https://www.youtube.com/@RAKLEDsolutions" target="_blank">
+            <img src="youtube-small-icon-9-removebg-preview.png" alt="youtube" /> 
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <div class="dropdown">
+          <a href="Products.html" class="dropbtn">Products</a>
+          <ul class="dropdown-content">
+             <li><a href="Leddsisplayscreen.html">LED Display Screen</a></li>
+                  <li><a href="Facadelightsolution.html">Facade Light Solution</a></li>
+                  <li><a href="Digitalstandee.html">Digital Standee</a></li>
+                  <li><a href="Transparentledscreen.html">Transparent LED Screen</a></li>
+                  <li><a href="Interactivefloor.html">Interactive Floor</a></li>
+                  <li><a href="Flexibleleddisplayscreen.html">Flexible LED Display Screen</a></li>
+                  <li><a href="Rentalleddisplay.html">Rental LED Display</a></li>
+                 <li><a href="Floorledscreen.html">Floor LED Screen</a></li>
+                 <li><a href="Customizedleddisplayscreen.html">Customized LED Display Screen</a></li>
+     </ul>
+        </div>
+        <a href="Services.html">Services</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+ 
+ 
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    const dropdownContent = document.getElementById('dropdownContent');
+
+    menuToggle.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+
+    window.toggleDropdown = function (event) {
+      event.stopPropagation();
+      dropdownContent.classList.toggle('show');
+    };
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.dropdown')) {
+        dropdownContent.classList.remove('show');
+      }
+    });
+  });
+</script>
+
+
+
+<section class="hero">
+    <div class="hero-content">
+      <div class="avatar" id="avatar"></div>
+      <h1>RAK LED SOLUTIONS</h1>
+      <p>"Authenticity matters. Every project image in this document is an original creation by our company and is protected under copyright laws."</p>
+      <div class="cta-buttons">
+        <a href="About.html" class="btn">View Profile</a>
+        <a href="Contact.html" class="btn outline">Contact</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+    <span></span>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
