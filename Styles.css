@@ -355,114 +355,6 @@
   }
     
 
-
-/**
-
-  .projects-section {
-    padding: 80px 20px;
-    background-color: #111;
-    color: #f0f0f0;
-    text-align: center;
-  }
-  
-  .projects-section h2 {
-    font-size: 2.8rem;
-    color: #00d8ff;
-    margin-bottom: 40px;
-  }
-  
-  .filter-buttons {
-    margin-bottom: 40px;
-  }
-  
-  .filter-btn {
-    background: none;
-    border: 1px solid #00d8ff;
-    color: #00d8ff;
-    padding: 10px 20px;
-    margin: 0 10px 10px;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-  }
-  
-  .filter-btn.active,
-  .filter-btn:hover {
-    background-color: #00d8ff;
-    color: #111;
-  }
-  
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .project-item {
-    background-color: #1a1a1a;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 216, 255, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .project-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .project-info {
-    padding: 20px;
-  }
-  
-  .project-info h3 {
-    margin: 0 0 10px;
-    font-size: 1.3rem;
-    color: #00d8ff;
-  }
-  
-  .project-info p {
-    font-size: 0.95rem;
-    color: #ccc;
-  }
-  
-  .project-item:hover {
-    transform: scale(1.03);
-  }
-  
-  .portfolio-cta {
-    margin-top: 50px;
-  }
-  
-  .view-portfolio {
-    padding: 12px 30px;
-    background-color: #00d8ff;
-    color: #111;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  .view-portfolio:hover {
-    background-color: #00b1cc;
-  }
-  
-  /* Hide by default, JS will toggle */
-  /**
-  .project-item {
-    display: none;
-  }
-  .project-item.show {
-    display: block;
-  }
-    **/
-
-
-
     .case-studies-rotate { 
       background: #292727;
       color: #a5d6f7;
@@ -792,6 +684,6 @@
     }
   }
 
-/*about css code*/
+
 
 
